@@ -10,7 +10,7 @@ export default function About() {
     handleFormChange
   } = useForm();
 
-  const { data } = useFetch();
+  const { data, handleFormChangeSubmit, handleSubmit } = useFetch();
 
   return (
     <main>
@@ -38,6 +38,27 @@ export default function About() {
         onChange={handleFormChange}
         placeholder="Email..."
       />
+
+
+      <br />
+      <br />
+      <br />
+
+      <p>Form Submit</p>
+      <input
+        type="text"
+        name="title"
+        onChange={handleFormChangeSubmit}
+        placeholder="Nome..."
+      />
+      <input
+        type="text"
+        name="body"
+        onChange={handleFormChangeSubmit}
+        placeholder="Email..."
+      />
+      <button onClick={handleSubmit}>Enviar</button>
+
     </main>
   );
 }

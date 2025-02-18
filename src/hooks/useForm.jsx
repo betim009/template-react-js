@@ -17,14 +17,13 @@ export default function useForm(initialValue = "") {
 
   const handleFormChange = ({ target }) => {
     const { name, value } = target;
-
     const result = {
       ...myForm,
       [name]: target.value
-    }
-    setMyForm(result)
+    };
 
-    console.log(result)
+    console.log(result);
+    setMyForm(result);
   }
 
 
