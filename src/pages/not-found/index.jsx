@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
-import "./notfound.css";
+import "./notFound.css";
 
 export default function NotFound() {
   return (
-    <div>
-      <h2>NotFound</h2>
-      <Link to="/">Back to home</Link>
-    </div>
+    <>
+      <header className="header-notFound">
+        <h4>App</h4>
+      </header>
+      <main className="main-notFound">
+        <div>
+          <h2>Page Not Found</h2>
+          <Link to="/">Back to home</Link>
+        </div>
+      </main>
+    </>
   );
 }

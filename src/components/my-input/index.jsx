@@ -1,4 +1,4 @@
-import useInput from "../../hooks/useState";
+import useInput from "../../hooks/useForm";
 
 export default function MyInput() {
   const { value, onChange } = useInput();

@@ -1,11 +1,9 @@
-import MyInput from "../../components/my-input";
 import "./home.css";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <h2>Home</h2>
-      <MyInput />
-    </div>
+    </main>
   );
 }
